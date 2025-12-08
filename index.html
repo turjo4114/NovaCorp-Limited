@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaCorp - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="icon.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header>
+    <nav class="navbar">
+      <!-- CSS-only toggle: hidden checkbox + label -->
+      <input type="checkbox" id="navToggle" class="nav-toggle" aria-hidden="true">
+      <label for="navToggle" class="menu-toggle" aria-label="Toggle navigation menu" role="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <!-- Backdrop label: clicking it will uncheck the checkbox (close menu) -->
+      <label for="navToggle" class="nav-backdrop" aria-hidden="true"></label>
+      <a href="index.html" class="logo" aria-label="NovaCorp home">
+        <img src="icon.png" alt="NovaCorp logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <h1>Welcome to NovaCorp</h1>
+      <p>Innovating the Future with Technology</p>
+      <a href="services.html" class="btn-primary">Explore Services</a>
+    </div>
+  </section>
+
+  <!-- Featured Services -->
+  <section class="services">
+    <div class="container">
+      <h2>Our Featured Services</h2>
+      <div class="service-cards">
+        <div class="card">
+          <div class="card-image">
+            <img src="Web_Development.jpg" alt="Web Development">
+          </div>
+          <h3>Web Development</h3>
+          <p>Build modern, scalable web applications with us.</p>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="mobile_app.jpg" alt="Mobile Apps">
+          </div>
+          <h3>Mobile Apps</h3>
+          <p>Create cross-platform mobile apps for you.</p>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="logo_brand.jpg" alt="Design & Branding">
+          </div>
+          <h3>Design & Branding</h3>
+          <p>Design a powerful brand identity that stands out.</p>
+        </div>
+          <div class="card">
+            <div class="card-image">
+              <img src="Cloud.jpg" alt="Cloud Services">
+            </div>
+            <h3>Cloud Services</h3>
+            <p>Deploy scalable cloud infrastructure and managed services.</p>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img src="data.jpg" alt="Data Analytics">
+            </div>
+            <h3>Data Analytics</h3>
+            <p>Turn data into actionable insights to drive decisions.</p>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img src="cyber-security.jpg" alt="Cybersecurity">
+            </div>
+            <h3>Cybersecurity</h3>
+            <p>Protect your assets with modern security solutions.</p>
+          </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <p class="lead">Have a project in mind or questions? Send us a message and we'll get back to you within 24 hours.</p>
+
+      <div class="contact-grid">
+        <form class="contact-form" action="#" method="post" novalidate>
+          <div class="row">
+            <div class="col">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your full name" required>
+            </div>
+            <div class="col">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required>
+            </div>
+          </div>
+
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" placeholder="Project or question" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Tell us about your project..." required></textarea>
+
+          <div class="form-actions">
+           <a href="thankyou.html" >
+            <button type="button" class="btn-primary">Send Message</button>
+           </a>
+            <div class="form-note">Or email us at <a href="mailto:hello@novacorp.com">hello@novacorp.com</a></div>
+          </div>
+
+          <div class="form-success visually-hidden" role="status">Thanks — your message has been received.</div>
+        </form>
+
+        <div class="contact-info">
+          <div class="info-card">
+            <h3>Office</h3>
+            <p>123 Innovation Bonani<br>Dhaka, Bangladesh</p>
+          </div>
+          <div class="info-card">
+            <h3>Phone</h3>
+            <p><a href="tel:+8801234567">+880 1712-345678</a></p>
+          </div>
+          <div class="info-card">
+            <h3>Business Hours</h3>
+            <p>Mon - Fri: 9am — 6pm</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 NovaCorp. All Rights Reserved.</p>
+      <div class="social-icons">
+        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaCorp - Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="icon.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header>
+    <nav class="navbar">
+      <input type="checkbox" id="navToggle" class="nav-toggle" aria-hidden="true">
+      <label for="navToggle" class="menu-toggle" aria-label="Toggle navigation menu" role="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <label for="navToggle" class="nav-backdrop" aria-hidden="true"></label>
+      <a href="index.html" class="logo" aria-label="NovaCorp home">
+        <img src="icon.png" alt="NovaCorp logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Auth Section: Login -->
+  <section class="auth-page">
+    <div class="container auth-container">
+      <div class="auth-card">
+        <!-- Left: form -->
+        <div class="auth-main">
+          <h1>Welcome back</h1>
+          <p class="auth-subtitle">Sign in to access your NovaCorp dashboard.</p>
+
+          <form class="auth-form" action="#" method="post" novalidate>
+            <div class="auth-field">
+              <label for="login-email">Email</label>
+              <input id="login-email" name="email" type="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="auth-field">
+              <div class="auth-label-row">
+                <label for="login-password">Password</label>
+                <a href="#" class="auth-link-small">Forgot password?</a>
+              </div>
+              <input id="login-password" name="password" type="password" placeholder="••••••••" required>
+            </div>
+            
+            <a href="index.html" >
+            <button type="button" class="btn-primary auth-submit">Sign in</button></a>
+
+            
+            <p class="auth-meta">
+              Don't have an account?
+              <a href="register.html" class="auth-link">Create one</a>
+            </p>
+          </form>
+        </div>
+
+        <!-- Right: side panel -->
+        <aside class="auth-aside">
+          <h2>NovaCorp</h2>
+          <p>Innovating the future with modern web, mobile, and cloud solutions.</p>
+          <ul class="auth-aside-list">
+            <li><i class="fas fa-check"></i> Secure & reliable services</li>
+            <li><i class="fas fa-check"></i> Modern UI/UX design</li>
+            <li><i class="fas fa-check"></i> Data-driven decisions</li>
+          </ul>
+          <a href="index.html" class="auth-link-secondary">Back to Home</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 NovaCorp. All Rights Reserved.</p>
+      <div class="social-icons">
+        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

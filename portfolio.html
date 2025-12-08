@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaCorp - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header>
+    <nav class="navbar">
+      <input type="checkbox" id="navToggle" class="nav-toggle" aria-hidden="true">
+      <label for="navToggle" class="menu-toggle" aria-label="Toggle navigation menu" role="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <label for="navToggle" class="nav-backdrop" aria-hidden="true"></label>
+      <a href="index.html" class="logo" aria-label="NovaCorp home">
+        <img src="icon.png" alt="NovaCorp logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio">
+    <div class="container">
+      <h2>Our Work</h2>
+      <div class="portfolio-items">
+        
+        <!-- Project 1: Image Left, Content Right -->
+        <div class="portfolio-item portfolio-row">
+          <div class="portfolio-image-col">
+            <div class="image-container">
+              <img src="game ui design.jpeg" alt="Game Website UI Design" class="portfolio-image">
+            </div>
+          </div>
+          <div class="portfolio-content-col">
+            <h3>Game Website UI Design</h3>
+            <p>A modern and engaging game website UI design that focuses on user experience and interactive elements. The design features sleek navigation, vibrant colors, and responsive layouts tailored for gamers.</p>
+          </div>
+        </div>
+
+        <!-- Project 2: Content Left, Image Right -->
+        <div class="portfolio-item portfolio-row portfolio-row-reverse">
+          <div class="portfolio-image-col">
+            <div class="image-container">
+              <img src="coffee website.jpeg" alt="Coffee Shop Website Design" class="portfolio-image">
+            </div>
+          </div>
+          <div class="portfolio-content-col">
+            <h3>Coffee Shop Website Design</h3>
+            <p>An elegant and warm coffee shop website showcasing the brand's ambiance and product offerings. Features include menu displays, online ordering integration, and beautiful imagery of premium coffee products and cozy interior spaces.</p>
+          </div>
+        </div>
+
+        <!-- Project 3: Image Left, Content Right -->
+        <div class="portfolio-item portfolio-row">
+          <div class="portfolio-image-col">
+            <div class="image-container">
+              <img src="mobile app.jpeg" alt="Mobile App Development" class="portfolio-image">
+            </div>
+          </div>
+          <div class="portfolio-content-col">
+            <h3>Mobile App Development</h3>
+            <p>A cutting-edge mobile application built with modern frameworks and best practices. The app provides seamless user experience across iOS and Android platforms with intuitive navigation, real-time data sync, and comprehensive feature set for on-the-go productivity.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 NovaCorp. All Rights Reserved.</p>
+      <div class="social-icons">
+        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

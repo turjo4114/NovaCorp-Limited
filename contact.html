@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaCorp - Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header>
+    <nav class="navbar">
+      <input type="checkbox" id="navToggle" class="nav-toggle" aria-hidden="true">
+      <label for="navToggle" class="menu-toggle" aria-label="Toggle navigation menu" role="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <label for="navToggle" class="nav-backdrop" aria-hidden="true"></label>
+      <a href="index.html" class="logo" aria-label="NovaCorp home">
+        <img src="icon.png" alt="NovaCorp logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <p class="lead">Have a project in mind or questions? Send us a message and we'll get back to you within 24 hours.</p>
+
+      <div class="contact-grid">
+        <form class="contact-form" action="#" method="post" novalidate>
+          <div class="row">
+            <div class="col">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your full name" required>
+            </div>
+            <div class="col">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required>
+            </div>
+          </div>
+
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" placeholder="Project or question" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Tell us about your project..." required></textarea>
+
+          <div class="form-actions">
+            <a href="thankyou.html" >
+            <button type="button" class="btn-primary">Send Message</button>
+           </a>
+            <div class="form-note">Or email us at <a href="mailto:hello@novacorp.com">hello@novacorp.com</a></div>
+          </div>
+
+          <div class="form-success visually-hidden" role="status">Thanks — your message has been received.</div>
+        </form>
+
+        <div class="contact-info">
+          <div class="info-card">
+            <h3>Office</h3>
+            <p>123 Innovation Banani<br>Dhaka, Bangladesh</p>
+          </div>
+          <div class="info-card">
+            <h3>Phone</h3>
+            <p><a href="tel:+8801234567">+880 1712-345678</a></p>
+          </div>
+          <div class="info-card">
+            <h3>Business Hours</h3>
+            <p>Mon - Fri: 9am — 6pm</p>
+        </div>
+        <div class="info-card">
+         <a href="index.html" class="btn-primary" style="display:block; text-align:center;">
+            Logout
+          </a>
+        </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 NovaCorp. All Rights Reserved.</p>
+      <div class="social-icons">
+        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
